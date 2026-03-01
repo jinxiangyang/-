@@ -1,0 +1,1 @@
+通过将图片文件放入新建文件夹images，即可放入visual stdio中打开使用 
