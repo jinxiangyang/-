@@ -1,0 +1,561 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.w {
+    width: 1200px;
+    margin: auto;
+}
+body {
+    background-color: #f3f5f7;
+}
+.header {
+    height: 42px;
+    /* background-color: pink; */
+    line-height: 42px;
+    margin: 30px auto;
+}
+li {
+    list-style: none;
+
+}
+img {
+    height: 42px;
+    float: left;
+}
+.nav {
+    float: left;
+}
+.nav li {
+    float: left;
+
+}
+.nav li a {
+    display: block;
+    margin-left: 48px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #050505;
+
+}
+.nav li a:hover {
+    border-bottom: 1px solid #00a4ff;
+
+}
+.search {
+    float: left;
+    width: 412px;
+    height: 40px;
+    margin-left: 70px;
+    border: 1px solid black;
+    /* background-color: aquamarine; */
+
+}
+.search button {
+    float: right;
+    border: none;
+    width: 48px;
+    height: 42px;
+}
+input {
+    float: left;
+    width: 339px;
+    height: 38px;
+    border: 2px solid #00a4ff;
+    padding-left: 22px;
+    font-size: 14px;
+    border-right: none;
+    color: #bfbfbf;
+}
+.user {
+    width: 184px;
+    height: 42px;
+    float: right;
+    /* background-color: #00a4ff; */
+}
+.user img {
+    float: left;
+    width: 33px;
+    height: 30px;
+    padding-left: 32px;
+
+
+}
+.user span {
+    font-size: 14px;
+    color: #666;
+    float: right;
+}
+
+.bg {
+    
+    height: 419px;
+    background-color: #1c036c;
+}
+.banner {
+    height: 419px;
+    background:url(images/banner2.png);
+
+}
+.subnav {
+    float: left;
+    width: 190px;
+    height: 419px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.subnav li a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+   
+
+
+
+}
+
+.subnav li {
+    height: 26px;
+    margin: 20px 50px 20px 10px;
+
+}
+.subnav a span {
+    float: right;
+    line-height: 26px;
+}
+.subnav li a:hover {
+    color: #00a4ff;
+}
+.course {
+    width: 229px;
+    height: 302px;
+    background-color: #fff;
+    float: right;
+    margin-top: 50px;
+
+}
+
+.course .hd {
+    height: 48px;
+    color: #fff;
+    background-color: #9bceea;
+    text-align: center;
+    line-height: 48px;
+   
+}
+.course .bd {
+
+    margin: 20px 45px 13px 20px;
+
+}
+.course .bd li{
+    margin-bottom: 10px;
+}
+.course .bd li h4 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #4e4e4e;
+
+}
+.course .bd li span{
+    font-size: 12px;
+    color: #a5a5a5;
+
+}
+.course hr {
+    border: 1px solid #eaeaea;
+    
+}
+.course .bd a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #22b0ff;
+    width: 200px;
+    height: 40px;
+    color: #22b0ff;
+    /* margin-left: 5px; */
+    margin-top: 4px;
+
+}
+.ghost {
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0px 1px 4px 0px;
+    margin-top: 8px;
+
+
+    
+}
+.ghost h4 {
+    float: left;
+    font-weight: 400;
+    color: #00a4ff;
+    font-size: 16px;
+    
+    margin: 22px 37px 23px 33px;
+}
+.ghost ul {
+    float: left;
+    height: 17px;
+}
+.ghost ul li {
+    float: left;
+}
+.ghost ul li a{
+    float: left;
+    display: block;
+
+    line-height: 1x7px;
+    text-decoration: none;
+    margin: 21px 31px 26px 37px;
+
+
+
+}
+.ghost ul span {
+    float: left;
+    line-height: 17px;
+    margin-top: 24px;
+}
+
+.ghost h5 a{
+    display: block;
+    text-decoration: none;
+    float: right;
+    margin-top: 24px;
+    margin-right: 26px;
+    font-size: 14px;
+    color: #00a4ff;
+    font-weight: 400;
+
+}
+.boxhead {
+    margin-top: 36px;
+    height: 42px;
+    margin-bottom: 21px;
+
+}
+.boxhead h4 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+    font-weight: 400;
+    line-height: 42px;
+}
+.boxhead h5 a{
+    float:right;
+    text-decoration: none;
+    line-height: 42px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+   /* 通用清除浮动的伪类样式（核心） */
+   .clearfix::after {
+       content: "";
+       /* 必须：伪类需要内容（空内容即可） */
+       display: block;
+       /* 转为块级元素，才能触发清除浮动 */
+       clear: both;
+       /* 关键：清除左右两侧的浮动 */
+       visibility: hidden;
+       /* 隐藏伪元素，不占用可视空间 */
+       height: 0;
+       /* 高度设为0，避免增加额外高度 */
+   }
+
+   /* 兼容IE6/7（可选，现代浏览器可省略） */
+   /* .clearfix {
+     *zoom: 1;
+   } */
+
+
+.box ul li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    margin-right:15px ;
+    margin-bottom: 14px;
+    
+}
+.box .r0 {
+    margin-right:0;
+}
+
+.box ul img {
+    width: 228px;
+    height: 155px;
+}
+
+.box h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #050505;
+    margin: 23px 20px 23px 25px;
+}
+
+.info {
+    margin: 22px 40px 30px 25px;
+}
+.info .great {
+    color: #ff7c2d;
+    font-size: 12px;
+
+}
+.info .fuhao {
+    color: #999999;
+    margin: 6px 12px 6px 12px;
+    font-size: 12px;
+}
+.info .state {
+    color: #999999;
+    font-size: 12px;
+
+}
+
+.casehead{
+    height: 30px;
+    margin-top: 45px;
+    
+}
+.casehead h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #494949;
+    float: left;
+    line-height: 30px;
+
+}
+.casehead ul{
+    margin-left: 276px;
+    
+
+}
+.casehead ul li a{
+    float: left;
+    display: block;
+    text-decoration: none;
+    margin-left: 74px;
+    font: 16px;
+    color:#868686;
+
+
+}
+.casehead ul li a:hover{
+    color: #00a4ff;
+}
+.casehead span a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #a5a5a5;
+    display: block;
+    float: right;
+    
+}
+.case {
+    margin-top: 22px;
+}
+.case img{
+    float: left;
+    width: 227px;
+    height: 394px;
+    
+}
+.case .right {
+    width: 973px;
+    height: 394px;
+    float: right;
+    /* background-color: pink; */
+
+}
+.right img {
+    width: 960px;
+    height: 100px;
+    float: right;
+}
+.right .rfooter {
+    width: 960px;
+    height: 270px;
+    /* background-color: pink; */
+    margin-top: 25px;
+    float: right;
+
+}
+.rfooter ul li {
+    width: 227px;
+    height: 268px;
+    /* background-color: pink; */
+    margin-right: 17px;
+    float: left;
+}
+.rfooter ul .last {
+    margin-right: 0;
+}
+.rfooter ul li img {
+    width: 100%;
+    height: 154px;
+    
+}
+.rfooter ul li h4 a {
+    color: #050505;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    height: 33px;
+    /* padding-top: 25px; */
+    float: left;
+    margin: 25px 20px 0px 22px;
+    
+}
+.rfooter ul li .info {
+    width: 140px;
+    float: left;
+    margin: 24px 85px 29px 24px;
+}
+.rfooter ul li .info h5{
+    font-weight: 400;
+    font-size: 12px;
+    color: #ff7c2d;
+    float: left;
+    margin-right: 13px;
+
+}
+.rfooter ul li .info span {
+    color: #999;
+    font-size: 12px;
+    float: left;
+}
+.rfooter ul li .info p {
+    color: #999;
+    font-size: 12px;
+    float: right;
+    margin-left: 13px;
+}
+.footer {
+    margin-top: 42px;
+    height: 418px;
+    background-color: #fff;
+    
+}
+
+
+.fbody {
+    height: 418px;
+    
+}
+.fbody .copyright {
+    width: 450px;
+    /* background-color: pink; */
+    float: left;
+}
+.copyright img {
+    margin-top: 35px;
+    margin-left: 23px;
+    margin-bottom: 28px;
+}
+.copyright p {
+    color: #666666;
+    font-size: 12px;
+    float: left;
+    margin-left: 23px;
+
+}
+.copyright a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #00a4ff;
+    border: 2px solid #00a4ff;
+    display: block;
+    float: left;
+    margin-top: 18px;
+    margin-left: 23px;
+    padding: 11px 30px;
+
+}
+
+.content{
+    width: 505px;
+    /* background-color: pink; */
+    float: right;
+    font-size: 16px;
+    color: #333;
+    margin-top: 35px;
+    margin-right: 30px;
+
+}
+
+.content .learn {
+    float: left;
+    margin-right: 145px;
+}
+.content .new {
+    float: left;
+}
+.content .cooperate {
+    float: right;
+}
+.content dt{
+    margin-bottom: 16px;
+}
+
+.three ul li {
+    float: left;
+    width: 223px;
+    height: 268px;
+    margin-right: 17px;
+    margin-top: 24px;
+
+
+}
+.three ul li .last{
+    margin-right: 0;
+
+}
+.three ul li img {
+    width: 100%;
+    height: 156px;
+
+}
+.three ul li h4 a{
+    color: #050505;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        display: block;
+        height: 33px;
+        /* padding-top: 25px; */
+        float: left;
+        margin: 25px 20px 0px 22px;
+
+
+}
+.three .info span {
+    color: #999;
+    font-size: 12px;
+    float: left;
+}
+
+.three .info p {
+    color: #999;
+    font-size: 12px;
+    float: right;
+    margin-left: 13px;
+}
+
+ .three .info {
+    width: 140px;
+    float: left;
+    margin: 24px 85px 29px 24px;
+}
+
+.three .info h5 {
+    font-weight: 400;
+    font-size: 12px;
+    color: #ff7c2d;
+    float: left;
+    margin-right: 13px;
+
+}
